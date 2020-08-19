@@ -37,8 +37,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-df_train = pd.read_csv('C:/Users/genar/OneDrive/Área de Trabalho/Projetos/NLP_with_ Disaster_Tweets/train.csv', engine='python')
-df_test = pd.read_csv('C:/Users/genar/OneDrive/Área de Trabalho/Projetos/NLP_with_ Disaster_Tweets/test.csv', engine='python')
+df_train = pd.read_csv('/NLP_with_ Disaster_Tweets/train.csv')
+df_test = pd.read_csv('/NLP_with_ Disaster_Tweets/test.csv')
 
 #Preprocessing the data calling the our preprocess function
 df_train['text'] = df_train['text'].apply(lambda x: Prep.preprocess(x))
