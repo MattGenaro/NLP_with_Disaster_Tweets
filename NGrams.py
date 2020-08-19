@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-#Dataframes
+#Data processing
 import pandas as pd
 
 #Text cleaning
