@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-#Dataframes 
+#Data processing
 import pandas as pd
 
-#Math tools
+#Linear algebra
 import numpy as np
 
 df_train = pd.read_csv('/NLP_with_ Disaster_Tweets/train.csv')
