@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-#Dataframes
+#Data processing
 import pandas as pd
 
-#Math tools
+#Linear algebra
 import numpy as np
 
 #Text cleaning
