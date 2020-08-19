@@ -19,8 +19,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-df_train = pd.read_csv('C:/Users/genar/OneDrive/Área de Trabalho/Projetos/NLP_with_ Disaster_Tweets/train.csv', engine='python')
-df_test = pd.read_csv('C:/Users/genar/OneDrive/Área de Trabalho/Projetos/NLP_with_ Disaster_Tweets/test.csv', engine='python')
+df_train = pd.read_csv('/NLP_with_ Disaster_Tweets/train.csv')
+df_test = pd.read_csv('/NLP_with_ Disaster_Tweets/test.csv')
 
 #Replacing 'target' attribute values for better data visualization
 df_train['target'].replace(0, 'Not Real', inplace=True)
