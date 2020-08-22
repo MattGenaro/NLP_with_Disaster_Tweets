@@ -75,7 +75,7 @@ f1_nb = f1_score(Y_test, pred_nb)
 #Support Vector Machine
 svc = SVC(kernel='rbf', random_state=0)
 svc.fit(X_vec, Y_train)
-pred_svc = nb.predict(vec.transform(X_test))
+pred_svc = svc.predict(vec.transform(X_test))
 #Metrics to evaluate the effectiveness of the model
 cmatrix_svc = confusion_matrix(Y_test, pred_svc)
 acc_svc = accuracy_score(Y_test, pred_svc)
@@ -88,7 +88,7 @@ f1_svc = f1_score(Y_test, pred_svc)
 xgb = XGBClassifier(max_depth=7, n_estimators=200, colsample_bytree=0.8, 
                         subsample=0.8, nthread=10, learning_rate=0.1)
 xgb.fit(X_vec, Y_train)
-pred_xgb = nb.predict(vec.transform(X_test))
+pred_xgb = xgb.predict(vec.transform(X_test))
 #Metrics to evaluate the effectiveness of the model
 cmatrix_xgb = confusion_matrix(Y_test, pred_xgb)
 acc_xgb = accuracy_score(Y_test, pred_xgb)
