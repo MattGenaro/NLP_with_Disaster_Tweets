@@ -1,3 +1,5 @@
+Exploratory and predictive analysis utilizing Natural Language Process in a database of 'tweets' from the Twitter plataform.
+
 References:
 
 [1] https://www.kaggle.com/c/nlp-getting-started

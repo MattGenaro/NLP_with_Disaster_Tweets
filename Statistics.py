@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
-#Dataframes 
+#Data processing
 import pandas as pd
 
-#Math tools
+#Linear algebra
 import numpy as np
 
-df_train = pd.read_csv('C:/Users/genar/OneDrive/Área de Trabalho/Projetos/NLP_with_ Disaster_Tweets/train.csv', engine='python')
-df_test = pd.read_csv('C:/Users/genar/OneDrive/Área de Trabalho/Projetos/NLP_with_ Disaster_Tweets/test.csv', engine='python')
+df_train = pd.read_csv('/NLP_with_ Disaster_Tweets/train.csv')
+df_test = pd.read_csv('/NLP_with_ Disaster_Tweets/test.csv')
 
 #Dimensions of training data
 df_train.head(5)

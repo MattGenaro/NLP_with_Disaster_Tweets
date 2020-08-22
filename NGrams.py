@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-#Dataframes
+#Data processing
 import pandas as pd
 
 #Text cleaning
@@ -13,8 +13,8 @@ from nltk.corpus import stopwords
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df_train = pd.read_csv('C:/Users/genar/OneDrive/Área de Trabalho/Projetos/NLP_with_ Disaster_Tweets/train.csv', engine='python')
-df_test = pd.read_csv('C:/Users/genar/OneDrive/Área de Trabalho/Projetos/NLP_with_ Disaster_Tweets/test.csv', engine='python')
+df_train = pd.read_csv('/NLP_with_ Disaster_Tweets/train.csv')
+df_test = pd.read_csv('/NLP_with_ Disaster_Tweets/test.csv')
 
 #Simple cleaning function to generate ngrams data
 def basic_clean(text):
